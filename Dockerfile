@@ -2,9 +2,9 @@ FROM node:latest
 
 WORKDIR /jenkins
 
-RUN npm install
-
 COPY . .
+
+RUN npm install
 
 EXPOSE 7100
 
